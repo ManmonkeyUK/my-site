@@ -1,6 +1,3 @@
-const withBase = (path: string) =>
-  import.meta.env.BASE_URL.replace(/\/$/, "") + path;
-
 export type Image = {
     src: string;
     alt?: string;
@@ -77,45 +74,45 @@ const siteConfig: SiteConfig = {
         alt: 'Space Ahead ✨ - A minimal space-inspired personal blog template, created by Siddhesh Thadeshwar.'
     },
     headerNavLinks: [
-        {
-            text: 'Home',
-            href: withBase('/')
-        },
-        {
-            text: 'Blog',
-            href: withBase('/blog')
-        },
-        {
-            text: 'Tags',
-            href: withBase('/tags')
-        },
-        {
-            text: 'About',
-            href: withBase('/about')
-        },
-        {
-            text: 'Contact',
-            href: withBase('/contact')
-        }
-    ],
+    {
+        text: 'Home',
+        href: '/'
+    },
+    {
+        text: 'Blog',
+        href: '/blog'
+    },
+    {
+        text: 'Tags',
+        href: '/tags'
+    },
+    {
+        text: 'About',
+        href: '/about'
+    },
+    {
+        text: 'Contact',
+        href: '/contact'
+    }
+],
     footerNavLinks: [
-        {
-            text: 'About',
-            href: withBase('/about')
-        },
-        {
-            text: 'Contact',
-            href: withBase('/contact')
-        },
-        {
-            text: 'RSS Feed',
-            href: withBase('/rss.xml')
-        },
-                {
-            text: 'Sitemap',
-            href: withBase('/sitemap-index.xml')
-        }
-    ],
+    {
+        text: 'About',
+        href: '/about'
+    },
+    {
+        text: 'Contact',
+        href: '/contact'
+    },
+    {
+        text: 'RSS Feed',
+        href: '/rss.xml'
+    },
+    {
+        text: 'Sitemap',
+        href: '/sitemap-index.xml'
+    }
+],
     socialLinks: [
         {
             text: 'Dribbble',
@@ -139,15 +136,15 @@ const siteConfig: SiteConfig = {
             alt: 'A person sitting at a desk in front of a computer'
         },
         actions: [
-            {
-                text: 'Read Now',
-                href: withBase('/blog')
-            },
-            {
-                text: 'Subscribe',
-                href: '#subscribe'
-            }
-        ]
+    {
+        text: 'Read Now',
+        href: '/blog'
+    },
+    {
+        text: 'Subscribe',
+        href: '#subscribe'
+    }
+]
     },
     about: {
         title: 'About',

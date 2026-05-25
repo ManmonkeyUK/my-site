@@ -8,7 +8,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   site: "https://manmonkey.co.uk",
-  base: "/",   // <-- this is optional but explicit is fine
+  base: "/",
 
   integrations: [
     swup({
